@@ -1,0 +1,108 @@
+/*
+Pedro Miguel Moreira Ferreira: 
+Personal website.
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*
+=======================================================
+Font-face porque sou preguiçoso-
+=======================================================
+*/
+
+@font-face {
+    font-family: "Acumin Pro";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Acumin Pro"), url("../assets/Fonts/Acumin-RPro.woff") format("woff"), url("../assets/Fonts/AcuminPro-Regular.eot") format("woff2"), url("../assets/Fonts/AcuminPro-Regular.ttf") format("truetype"), url("../assets/Fonts/AcuminPro-Regular.svg") format("svg"), url("../assets/Fonts/AcuminPro-Regular.eot") format("eot");
+}
+
+/*
+=======================================================
+Background-Setup
+=======================================================
+*/
+
+/* Setar o canvas como backgorund para fazer as animações*/
+/* canvas {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+ */
+
+body {
+	font-family: 'Acumin Pro';
+	background-color: #212026;
+	opacity: 0.6;
+}
+
+#particles-js {
+	opacity:0.6;
+}
+
+/*
+Main Vars
+*/
+
+.display--grid{ 
+    display: -ms-grid;
+    display: grid;
+}
+
+
+.grid__main{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: auto/repeat(12,1fr);
+}
+
+.profile__wrapper{
+	width:100%;
+}
