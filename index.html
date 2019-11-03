@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pedro Ferreira | Web Dev</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
-    <canvas id="canvas"></canvas>
     <div id="particles-js"></div>
     <div class="profile__wrapper display--flex">
-        <div class="profile__name tlt">
-            [ Pedro Ferreira ]
+        <div class="profile__name display--flex">
+            <div class="primary--text">Pedro Ferreira</div>
+            <div class="secondary--text">Web Developer</div>
         </div>
     </div>
 
@@ -24,7 +24,85 @@
     <script src="js/particles.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/jquery.textillate.js"></script>
+        <script src="js/jquery.lettering.min.js"></script>
+    <script>
 
+        $(document).ready(function () {
+
+            $(function () {
+                $('.profile__name').textillate({
+                    // the default selector to use when detecting multiple texts to animate
+                    selector: '.texts',
+
+                    // enable looping
+                    loop: false,
+
+                    // sets the minimum display time for each text before it is replaced
+                    minDisplayTime: 2000,
+
+                    // sets the initial delay before starting the animation
+                    // (note that depending on the in effect you may need to manually apply
+                    // visibility: hidden to the element before running this plugin)
+                    initialDelay: 0,
+
+                    // set whether or not to automatically start animating
+                    autoStart: true,
+
+                    // custom set of 'in' effects. This effects whether or not the
+                    // character is shown/hidden before or after an animation
+                    inEffects: [],
+
+                    // custom set of 'out' effects
+                    outEffects: ['hinge'],
+
+                    // in animation settings
+                    in: {
+                        // set the effect name
+                        effect: 'fadeInLeftBig',
+
+                        // set the delay factor applied to each consecutive character
+                        delayScale: 1.5,
+
+                        // set the delay between each character
+                        delay: 50,
+
+                        // set to true to animate all the characters at the same time
+                        sync: false,
+
+                        // randomize the character sequence
+                        // (note that shuffle doesn't make sense with sync = true)
+                        shuffle: false,
+
+                        // reverse the character sequence
+                        // (note that reverse doesn't make sense with sync = true)
+                        reverse: false,
+
+                        // callback that executes once the animation has finished
+                        callback: function () { }
+                    },
+
+                    // out animation settings.
+                    out: {
+                        effect: 'hinge',
+                        delayScale: 1.5,
+                        delay: 50,
+                        sync: false,
+                        shuffle: false,
+                        reverse: false,
+                        callback: function () { }
+                    },
+
+                    // callback that executes once textillate has finished
+                    callback: function () { },
+
+                    // set the type of token to animate (available types: 'char' and 'word')
+                    type: 'char'
+                });
+            })
+        });
+
+    </script>
 </body>
 
 </html>

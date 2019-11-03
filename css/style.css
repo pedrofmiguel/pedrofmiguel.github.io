@@ -4,51 +4,130 @@ Personal website.
 
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
 
 /*
 =======================================================
@@ -57,10 +136,15 @@ Font-face porque sou preguiçoso-
 */
 
 @font-face {
-    font-family: "Acumin Pro";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Acumin Pro"), url("../assets/Fonts/Acumin-RPro.woff") format("woff"), url("../assets/Fonts/AcuminPro-Regular.eot") format("woff2"), url("../assets/Fonts/AcuminPro-Regular.ttf") format("truetype"), url("../assets/Fonts/AcuminPro-Regular.svg") format("svg"), url("../assets/Fonts/AcuminPro-Regular.eot") format("eot");
+  font-family: "Acumin Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro"),
+    url("../assets/Fonts/Acumin-RPro.woff") format("woff"),
+    url("../assets/Fonts/AcuminPro-Regular.eot") format("woff2"),
+    url("../assets/Fonts/AcuminPro-Regular.ttf") format("truetype"),
+    url("../assets/Fonts/AcuminPro-Regular.svg") format("svg"),
+    url("../assets/Fonts/AcuminPro-Regular.eot") format("eot");
 }
 
 /*
@@ -79,30 +163,50 @@ Background-Setup
  */
 
 body {
-	font-family: 'Acumin Pro';
-	background-color: #212026;
-	opacity: 0.6;
-}
-
-#particles-js {
-	opacity:0.6;
+  font-family: "Acumin Pro";
+  background-color: #212026;
+  opacity: 0.6;
 }
 
 /*
-Main Vars
+ Declarações de classes gerais
 */
 
-.display--grid{ 
-    display: -ms-grid;
-    display: grid;
+.display--grid {
+  display: -ms-grid;
+  display: grid;
 }
 
-
-.grid__main{
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template: auto/repeat(12,1fr);
+.display--flex {
+  display: flex;
 }
 
-.profile__wrapper{
-	width:100%;
+.grid__main {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template: auto/repeat(12, 1fr);
+}
+
+/*P A R T I C L E S*/
+
+#particles-js {
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/*
+profile 
+*/
+.profile__wrapper {
+	font-size: 50px;
+	line-height: 55px;
+	justify-content: center;
+  top: 50%;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.profile__name {
+  align-items: center;
+  color: white;
 }
