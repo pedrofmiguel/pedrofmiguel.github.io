@@ -1,0 +1,162 @@
+/*
+by Pedro Ferreira 
+*/
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-color: #f0ead6;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 70px;
+  line-height: 70px;
+}
+
+a {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+img {
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.left {
+  padding: 2em 2em 2em 0;
+  margin-left: -0.55rem;
+  margin-right: -0.55rem;
+  padding-left: 0.55rem;
+  padding-right: 0.55rem;
+}
+
+.left-name {
+  z-index: -1;
+  background-size: 0 40%;
+  margin-left: -0.55rem;
+  margin-right: -0.55rem;
+  padding-left: 0.55rem;
+  padding-right: 0.55rem;
+}
+
+.left-name-show {
+  background-size: 100% 40%;
+}
+
+.left-title {
+  display: block;
+  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4bedc2), to(#4bedc2));
+  background-image: linear-gradient(#4bedc2, #4bedc2);
+  background-position: 0 40%;
+  background-repeat: no-repeat;
+  background-size: 0 40%;
+  -webkit-transition: background-size 1s 1.5s ease;
+  transition: background-size 1s 1.5s ease;
+}
+
+.left-title-show {
+  background-size: 100% 40%;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #4bedc2;
+  width: 0%;
+  height: 100%;
+}
+
+footer nav {
+  position: relative;
+  z-index: 9;
+  text-align: right;
+  width: 100%;
+  padding: 30px 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+footer nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+footer nav ul li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer nav ul li a {
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4bedc2), to(#4bedc2));
+  background-image: linear-gradient(#4bedc2, #4bedc2);
+  background-position: 0 40%;
+  background-repeat: no-repeat;
+  background-size: 0 40%;
+  -webkit-transition: background-size 0.5 0.5s ease-in-out;
+  transition: background-size 0.5 0.5s ease-in-out;
+}
+
+footer nav ul li a:hover {
+  background-size: 100% 40%;
+}
+
+/* Responsive */
+@media (min-width: 650px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3em;
+    position: relative;
+    z-index: 3;
+  }
+  .left {
+    padding-right: 2em;
+  }
+  .right {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

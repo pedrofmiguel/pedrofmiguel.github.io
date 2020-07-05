@@ -4,41 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pedro Ferreira | Web Dev</title>
-    <link rel="stylesheet" href="css/style.css">  
-    <link rel="stylesheet" href="css/reset.css">  
-    <link rel="stylesheet" href="css/ress.css">  
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
+    <title>Ferreira</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 
-<body>
-   <main>
-        <section class="presentation__section">
-            <div class="presentation__name">
-                <div class="first__name" data-aos="fade-right">
-                    <h1>Pedro Ferreira</h1>
-                </div>
+<body data-barba="wrapper">
+    <div class="wrapper">
 
-                <div class="occupation" data-aos="fade-right">
-                    <h2>Web Developer</h2>
-                </div>
-
+        <div class="loading-container">
+            <div class="loading-screen">
+                <p class="loading-text"></p>
             </div>
-            <div class="presentation__photo">
-
+        </div>
+        <main data-barba="container" data-barba-namespace="home">
+            <div class="left">
+                <h1 class="left-name">Pedro
+                    Ferreira
+                </h1>
+                <h2 class="left-title">Front-end developer
+                    <br>
+                    <a target="_blank" href="https://www.zalox.com">@Zalox</a>
+                </h2>
             </div>
-            
-        </section>
-   </main>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+            <div class="right">
+                <img src="/images/profile.jpg" alt="Profile Picture">
+            </div>
+        </main>
+        <footer class="footer">
+            <nav>
+                <ul>
+                    <li><a href="">Linked in</a></li>
+                    <li><a href="">E-mail me!</a></li>
+                    <li><a href="">My Github</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <!-- barba js -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- animations -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
