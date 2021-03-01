@@ -7,24 +7,45 @@
     <title>Ferreira</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+
 </head>
 
 <body data-barba="wrapper">
     <div class="wrapper">
-
         <div class="loading-container">
             <div class="loading-screen">
                 <p class="loading-text"></p>
             </div>
         </div>
+        <div class="cursor">
+            <div class="cursor__ball cursor__ball--big ">
+              <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+              </svg>
+            </div>
+            
+            <div class="cursor__ball cursor__ball--small">
+              <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+              </svg>
+            </div>
+          </div>
         <main data-barba="container" data-barba-namespace="home">
             <div class="left">
-                <h1 class="left-name">Pedro
+                <h1 class="left-name">
+                    Pedro
+                    <br>   
                     Ferreira
                 </h1>
                 <h2 class="left-title">Front-end developer
                     <br>
-                    <a target="_blank" href="https://www.zalox.com">@Zalox</a>
+                    <a target="_blank" href="https://www.zalox.com" class="company hoverable">@Zalox</a>
                 </h2>
             </div>
             <div class="right">
@@ -34,21 +55,18 @@
         <footer class="footer">
             <nav>   
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/pedro-ferreira-7651a4136/" rel="nofollow noopener">Linked
-                            in</a></li>
-                    <li><a href="mailto:pedrofmiguel@outlook.pt" rel="nofollow noopener">E-mail me!</a></li>
-                    <li><a target="_blank" href="https://github.com/pedrofmiguel" rel="nofollow noopener">My Github</a>
+                    <li><a href="https://www.linkedin.com/in/pedro-ferreira-7651a4136/" rel="nofollow noopener" class="hoverable">Linked
+                            in</a></li> 
+                    <li><a href="mailto:pedrofmiguel@outlook.pt" rel="nofollow noopener" class="hoverable">E-mail me!</a></li>
+                    <li><a target="_blank" href="https://github.com/pedrofmiguel" rel="nofollow noopener" class="hoverable">My Github</a>
                     </li>
+                    <li><a href="/assets/cv_pedro.pdf" download class="hoverable">Download my Cv</a></li>
                 </ul>
             </nav>
         </footer>
     </div>
     <!-- barba js -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <!-- gsap  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <!-- animations -->
-    <script src="js/main.js"></script>
+  
 </body>
 
 </html>
