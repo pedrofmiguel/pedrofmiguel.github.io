@@ -2,6 +2,7 @@
 by Pedro Ferreira 
 */
 body {
+  overflow-x: hidden;
   font-family: monospace;
   cursor: none;
   margin: 0;
@@ -176,6 +177,60 @@ main, footer {
   }
   .right {
     width: 400px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  footer nav ul li {
+    display: inline-block;
+    margin-left: 6px;
+    padding-left: 6px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  img {
+    width: 85%;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  footer nav ul li {
+    display: list-item;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h2 {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 65px;
+  }
+  footer nav ul li {
+    display: list-item;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
